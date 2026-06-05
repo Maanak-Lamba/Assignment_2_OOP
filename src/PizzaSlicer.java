@@ -1,9 +1,8 @@
 /*
- * Name: [Your Name]
+ * Name: Maanak lamba
  * Date: June 3, 2026
  * Description: This program asks the user for a pizza diameter and tells them
  * how many slices it will be cut into and the area of each slice.
- * Only diameters between 6 and 24 inches are accepted.
  */
 
 import java.util.Scanner;
