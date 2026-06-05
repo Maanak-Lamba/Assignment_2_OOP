@@ -1,5 +1,5 @@
 /*
- * Name: Maanak lamba
+ * Name: Maanak Lamba
  * Date: June 3, 2026
  * Description: This program asks the user for a pizza diameter and tells them
  * how many slices it will be cut into and the area of each slice.
@@ -51,17 +51,12 @@ public class PizzaSlicer {
             numSlices = 16;
         }
 
-        // calculate the total area of the pizza then divide by slices
         // area of a circle = pi * radius^2, radius is half the diameter
         pizzaArea = Math.PI * Math.pow(diameter / 2, 2);
         sliceArea = pizzaArea / numSlices;
 
-        // round both values to 2 decimal places for display
-        double roundedDiameter = Math.round(diameter * 100.0) / 100.0;
-        double roundedSliceArea = Math.round(sliceArea * 100.0) / 100.0;
-
-        System.out.println("\nA " + roundedDiameter + "\" pizza will yield " + numSlices + " slices.");
-        System.out.printf("Each slice will have an area of %.2f square inches.\n", sliceArea);
+        System.out.println("\nA " + diameter + "\" pizza will yield " + numSlices + " slices.");
+        System.out.println("Each slice will have an area of " + Math.round(sliceArea * 100.0) / 100.0 + " square inches.");
 
         keyboard.close();
 
